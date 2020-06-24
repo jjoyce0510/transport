@@ -4,6 +4,10 @@ buildscript {
   }
 }
 
+project.ext.setProperty('transport-plugin-main-source-set', 'main')
+project.ext.setProperty('transport-plugin-test-source-set', 'test')
+project.ext.setProperty('transport-plugin-output-dir', 'build')
+
 apply plugin: 'java'
 apply plugin: 'com.linkedin.transport.plugin'
 
